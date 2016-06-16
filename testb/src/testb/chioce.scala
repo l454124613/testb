@@ -5,23 +5,24 @@ import org.openqa.selenium.By
 /*
  * 选择相关
  */
-object chioce {
+class chioce(by:By) {
+  var ele=element.find(by)
   /*
    * 点击
    */
-  def click(by:By) {
-    element.find( by).click()
+  def click() {
+   ele.click()
   }
   /*
    * 是否可用
    */
-   def isEnabled(by:By) {
-    element.find( by).isEnabled()
+   def isEnabled() {
+    ele.isEnabled()
   }
    /*
     * 是否已选
     */
-    def isSelected(by:By) {
-    element.find( by).isSelected()
+    def isSelected() {
+    ele.isSelected()
   }
 }

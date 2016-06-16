@@ -2,22 +2,27 @@ package testb
 
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.By
+import org.openqa.selenium.WebElement
+
 /*
  * 按钮相关
  */
-object button {
+class  button(by:By) {
+  var ele=element.find(by)
   /*
    * 点击
    */
-  def click(by:By) {
-    element.find( by).click()
+  def click() {
+    ele.click()
   }
   /*
    * 是否可用
    */
-   def isEnabled(by:By) {
-    element.find( by).isEnabled()
+   def isEnabled() {
+    ele.isEnabled()
   }
+   
+  
   
   
   

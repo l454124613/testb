@@ -4,11 +4,13 @@ import org.openqa.selenium.By
 /*
  * 上传相关
  */
-object upload {
+class upload(by:By) {
+     var ele=element.find(by)
+
   /*
    * 上传操作
    */
-  def send(by:By,file:String){
-    element.find(by).sendKeys(file)
+  def send(file:String){
+    ele.sendKeys(file)
   }
 }

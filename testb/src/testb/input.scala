@@ -7,26 +7,29 @@ import org.openqa.selenium.By
  * 输入框相关
  */
 
-object input {
+class input(by:By) {
+    var ele=element.find(by)
+
+  
   /*
    * 是否可用
    */
-     def isEnabled(by:By) {
-    element.find( by).isEnabled()
+     def isEnabled() {
+    ele.isEnabled()
   }
      
      /*
       * 输入值
       */
-      def sendKeys(by:By,key:String) {
-    element.find( by).sendKeys(key)
+      def sendKeys(key:String) {
+    ele.sendKeys(key)
   }
       
       /*
        * 清除值
        */
     
-     def clear(by:By) {
-    element.find( by).clear()
+     def clear() {
+   ele.clear()
   } 
 }

@@ -7,18 +7,20 @@ import org.openqa.selenium.support.ui.Select
 /*
  * 下拉框相关
  */
-object select {
+class select(by:By) {
+      var ele=element.find(by)
+
   /*是否可用
    * 
    */
-    def isEnabled(by:By) {
-    element.find( by).isEnabled()
+    def isEnabled() {
+  ele.isEnabled()
   }
     /*
      * 选择
      */
-    def chioce(by:By,index:Int){
-    var  select:Select = new Select(element.find( by))
+    def chioce(index:Int){
+    var  select:Select = new Select(ele)
     select.selectByIndex(index)
     }
 }
