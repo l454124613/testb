@@ -3,6 +3,9 @@ package testb
 import org.openqa.selenium.interactions.Actions
 import org.openqa.selenium.By
 
+/*
+ * 鼠标相关
+ */
 object mouse {
   val  action:Actions = new Actions(driver.get_it());
   /*

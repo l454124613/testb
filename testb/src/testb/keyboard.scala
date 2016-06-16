@@ -3,6 +3,10 @@ package testb
 import org.openqa.selenium.Keys
 import org.openqa.selenium.interactions.Actions
 
+
+/*
+ * 键盘相关
+ */
 object keyboard {
     val  action:Actions = new Actions(driver.get_it());
 /*

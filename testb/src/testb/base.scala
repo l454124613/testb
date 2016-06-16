@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.Select
 import java.util.concurrent.TimeUnit
 
 
-class base() {
+object base {
 
  
 
